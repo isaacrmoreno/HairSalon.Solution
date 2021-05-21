@@ -21,36 +21,6 @@ This is a MVC one-to-many mock up site for Eau Claire who needs to manage her st
 
 # Setup/Installation Requirements 📁
 
-### Database Setup:
-
-- Carefully follow [these steps from LearnHowToProgram.com](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql) to install both **MySQL Server 8.0.19** and **MySQL Workbench**.
-- Ensure the MySQL server is running by opening Terminal or Windows Powershell and entering the command `mysql -uroot -pepicodus`
-
-  - If you set up MySQL Server with a different username and/or password, the command will be `mysql -uYourUsername -pYourPassword`
-
-  To import the database structure:
-
-- Open MySQL Workbench
-- On the "Welcome" page, double-click the MySQL Local instance 3306 in the **MySQL Connections** section. You may be prompted to enter a password; if so, this will be `epicodus` or your custom password, just as in the earlier step
-- Click on the **Adminstration** tab
-
-  1. Click on _Data Import/Restore_
-  2. In the Data Import window that appears, select _Import from Self-Contained File_
-  3. Navigate the file selection to your cloned project location and choose the `.sql` file at `HairSalon.Solution/isaac_moreno.sql`
-  4. At the **Default Target Schema** option, choose _New..._ and name the schema `whatever_your_database_schema_is_called`
-  5. Click the _Start Import_ button at the bottom-right.
-
-  ### Database Setup:
-
-1. Download MySQL and MySQL Workbench to set up a local database
-
-- Once installed, open MyMql Workbench and open a local server
-- In the Navigator, select the Administration tab and then select Data Import/Restore
-- Under Import Options, select Import From Self-Contained File, and then select the "isaac_moreno.sql" file which can be found in HairSalon.Solution
-- In the Default Schema to be Imported To option, select New
-- Enter a name for your database and select OK
-- Click Start Import to begin database import
-
 ### Application Setup:
 
 1. Clone this repository: `% git clone https://github.com/isaacrmoreno/HairSalon.Solution`
@@ -67,7 +37,26 @@ This is a MVC one-to-many mock up site for Eau Claire who needs to manage her st
 }
 ```
 
-- Note: Make sure that [YOUR DATABASE] and [YOUR PASSWORD] match the database name and password of your local MySql server.\_
+- Note: Make sure that [YOUR DATABASE] and [YOUR PASSWORD] match the database name and password of your local MySql server.
+
+### Database Setup:
+
+1. Carefully follow [these steps from LearnHowToProgram.com](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql) to install both **MySQL Server 8.0.19** and **MySQL Workbench**.
+2. Ensure the MySQL server is running by opening Terminal or Windows Powershell and entering the command `mysql -uroot -pepicodus`
+
+   - If you set up MySQL Server with a different username and/or password, the command will be `mysql -uYourUsername -pYourPassword`
+
+### To Import Database Structure:
+
+1. Open MySQL Workbench
+2. On the "Welcome" page, double-click the MySQL Local instance 3306 in the **MySQL Connections** section. You may be prompted to enter a password; if so, this will be `epicodus` or your custom password from the _Database Setup_ instructions above.
+3. Click on the **Adminstration** tab
+
+   - Click on _Data Import/Restore_
+   - In the Data Import window that appears, select _Import from Self-Contained File_
+   - Navigate the file selection to your cloned project location and choose the `.sql` file at `HairSalon.Solution/isaac_moreno.sql`
+   - At the **Default Target Schema** option, choose _New_ and Enter a name for your database and select OK.
+   - Click the _Start Import_ button at the bottom-right.
 
 ### To Run Application:
 
