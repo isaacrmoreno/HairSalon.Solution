@@ -15,3 +15,4 @@ namespace ClairesHairSalon.Models
     public string Specialty { get; set; }
     public virtual ICollection<Client> Clients { get; set; }
   }
+}
