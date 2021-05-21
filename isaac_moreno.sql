@@ -42,7 +42,7 @@ CREATE TABLE `stylists` (
   `Name` varchar(255) DEFAULT NULL,
   `Age` int(11) DEFAULT NULL,
   `HomeTown` varchar(255) DEFAULT NULL,
-  `Speciality` varchar(255) DEFAULT NULL,
+  `Specialty` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`StylistsId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -56,4 +56,4 @@ CREATE TABLE `stylists` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-21 10:52:23
+-- Dump completed on 2021-05-21 11:37:08
